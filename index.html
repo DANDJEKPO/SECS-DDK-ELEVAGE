@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SECS DDK ELEVAGE- Elevage et Formation</title>
+    <style>
+        /* Réinitialiser les marges et les paddings par défaut */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style du corps du site */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9; /* Fond très clair vert */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* En-tête */
+        header {
+            background-color: #388e3c; /* Vert plus foncé */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        header img {
+            width: 150px; /* Ajustez la taille du logo */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Centrer l'image */
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin-top: 10px;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section principale */
+        main {
+            padding: 20px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Titres et texte */
+        h2 {
+            color: #388e3c; /* Vert pour les titres */
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1em;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        /* Liens */
+        a {
+            color: #388e3c; /* Liens verts */
+        }
+
+        a:hover {
+            color: #2c6e2f; /* Couleur plus foncée au survol */
+        }
+
+        /* Images */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Pied de page */
+        footer {
+            background-color: #388e3c; /* Même vert que l'en-tête */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        main {
+            padding-bottom: 50px; /* Ajout d'espace pour que le footer ne cache pas le contenu */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header nav ul {
+                text-align: center;
+            }
+
+            header nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Section des formations */
+        #formations ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #formations ul li {
+            margin-bottom: 10px;
+        }
+
+        #formations ul li a {
+            color: #388e3c;
+            font-weight: bold;
+        }
+
+        #formations ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contenu spécifique des formations */
+        .formation-details {
+            display: none; /* Les détails seront cachés au départ */
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f1f8e9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section des publications quotidiennes */
+        #publications {
+            margin-top: 30px;
+        }
+
+        .publication {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .publication h3 {
+            color: #388e3c;
+            font-size: 1.5em;
+        }
+
+        .publication p {
+            font-size: 1.1em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- En-tête avec logo et navigation -->
+    <header>
+        <img src="logo.jpg" alt="SECS DDK ELEVAGE Logo"> <!-- Remplacez logo.png par le chemin de votre logo -->
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#formations">Formations</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#publications">Publications</a></li> <!-- Lien vers la section des publications -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+        <section id="accueil">
+            <h2>Bienvenue sur SECS DDK ELEVAGE</h2>
+            <p>Je suis Abel DANDJEKPO, spécialiste en élevage et formateur. Ce site vous permet de découvrir mes services en élevage, mes formations en ligne, et mes projets communautaires.</p>
+        </section>
+
+        <section id="formations">
+            <h2>Formations en ligne</h2>
+            <p>Je propose des formations spécialisées dans l'élevage de différents animaux (lapins, poulets, porcs, etc.), ainsi que des formations en gestion d'élevage et collecte de données.</p>
+            <ul>
+                <li><a href="#" onclick="toggleFormationDetails('lapins')">Formation en élevage de lapins</a></li>
+                <li><a href="#" onclick="toggleFormationDetails('porcs')">Formation en élevage de porcs</a></li>
+                <li><a href="#" onclick="toggleFormationDetails('collecte')">Formation sur les outils de collecte de données</a></li>
+                <li><a href="#" onclick="toggleFormationDetails('lapins')">Formation en élevage de Poulets chairs</a></li>
+                <li><a href="#" onclick="toggleFormationDetails('porcs')">Formation en élevage de Poules pondeuses</a></li>
+                <li><a href="#" onclick="toggleFormationDetails('lapins')">Formation en élevage de Poissons</a></li>
+                <li><a href="#" onclick="toggleFormationDetails('porcs')">Formation en élevage d'escagots</a></li>
+            </ul>
+
+            <!-- Détails des formations -->
+            <div id="lapins" class="formation-details">
+                <h3>Formation en élevage de lapins</h3>
+                <p>Apprenez les bases de l'élevage de lapins, y compris l'alimentation, les soins, et la reproduction.</p>
+            </div>
+
+            <div id="porcs" class="formation-details">
+                <h3>Formation en élevage de porcs</h3>
+                <p>Découvrez les techniques de gestion d'un élevage de porcs, depuis la naissance jusqu'à la vente des produits.</p>
+            </div>
+
+            <div id="collecte" class="formation-details">
+                <h3>Formation sur les outils de collecte de données</h3>
+                <p>Apprenez à utiliser des outils comme KoboToolbox et Google Forms pour collecter et analyser des données efficacement.</p>
+            </div>
+            <div id="Poulets chairs" class="formation-details">
+                <h3>Formation en élevage de Poulets chairs</h3>
+                <p>Apprenez les bases de l'élevage de Poulets chairs, y compris l'alimentation, les soins, et la vente.</p>
+            </div>
+            <div id="Poules pondeuses" class="formation-details">
+                <h3>Formation en élevage de poules pondeuses</h3>
+                <p>Apprenez les bases de l'élevage de poules pondeuses, y compris l'alimentation, les soins, et la vente.</p>
+            </div>
+            <div id="Poissons" class="formation-details">
+                <h3>Formation en élevage de poissons</h3>
+                <p>Apprenez les bases de l'élevage de poissons, y compris l'alimentation, les soins, et la reproduction.</p>
+            </div>
+            <div id="Escagots" class="formation-details">
+                <h3>Formation en élevage d'escagots</h3>
+                <p>Apprenez les bases de l'élevage d'escagots, y compris l'alimentation, les soins, et la reproduction.</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Mes Services</h2>
+            <p>Je vous propose un accompagnement personnalisé dans vos projets d'élevage, de la création de votre plan d'affaires à la gestion quotidienne de votre élevage.</p>
+            <ul>
+                <li>Consultation en élevage</li>
+                <li>Formation et accompagnement en gestion d'élevage</li>
+                <li>Vente de matériel d'élevage</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <p>Vous avez des questions ou souhaitez en savoir plus sur mes services et formations ? N'hésitez pas à me contacter via les informations ci-dessous.</p>
+            <p>Email: <a href="mailto:dandjekpoabel03@gmail.com">dandjekpoabel03@gmail.com</a></p>
+            <p>Téléphone: <a href="tel:+2290199648190">+229 01 99 64 81 90</a></p>
+        </section>
+
+        <!-- Section des publications quotidiennes -->
+        <section id="publications">
+            <h2>Publications du jour</h2>
+
+            <!-- Publication de la journée -->
+            <div class="publication">
+                <h3>Publication du 17 mars 2025</h3>
+                <p>Bienvenue dans cette nouvelle journée! Aujourd'hui, nous allons aborder les meilleurs conseils pour réussir votre élevage de lapins... 
+                    <h3>📢 ÉLEVEUR, NE LAISSE PLUS LES MALADIES RUINER TON TRAVAIL ! 🐓🐖🐇💊🔥</h3>
+                    <P>Les maladies bactériennes et virales découragent trop d’éleveurs de lapins, porcs, poulets de chair et pondeuses ! </P>
+                    <p> Voici les principales maladies qui frappent les élevages :</p>
+                    <p>🔹 Peste porcine africaine (PPA) – Virus hautement contagieux pour les porcs, provoquant une mort rapide des animaux infectés. Elle se manifeste par une forte fièvre, des hémorragies internes et une détérioration rapide de la santé. Il n'existe pas de traitement ou de vaccin efficace contre cette maladie, ce qui la rend très difficile à contrôler.</p>
+                    <p>🔹 Maladie de Newcastle – Virus qui affecte les volailles, principalement les poules. Elle se caractérise par des symptômes respiratoires, des troubles nerveux et une diarrhée. La mortalité peut atteindre 100 % si la maladie n’est pas maîtrisée rapidement. La prévention passe par la vaccination et une bonne gestion sanitaire.</p>
+                    <p>🔹 Influenza aviaire (grippe aviaire) – Virus hautement contagieux affectant les poules et autres volailles. Elle peut entraîner des symptômes respiratoires graves et affecter la production d'œufs. Elle peut se propager rapidement dans un élevage et provoquer des pertes économiques considérables. La vaccination et des mesures de bio-sécurité strictes sont essentielles pour la prévenir.</p>
+                    <p>🔹 Coccidiose – Infection parasitaire causée par des coccidies, qui affecte les lapins et poules. Les symptômes incluent de la diarrhée, des pertes de poids et une déshydratation sévère. C'est une maladie fréquente dans les environnements de forte densité d'animaux. Un traitement précoce avec des antibiotiques spécifiques et la gestion de l'hygiène sont cruciaux pour éviter sa propagation.</p>
+                    <p>🔹 Tuberculose porcine – Maladie bactérienne chronique qui affecte principalement les porcs. Elle se manifeste par des pertes de poids, de la fièvre, et des problèmes respiratoires. Bien qu’elle soit plus fréquente dans les élevages non contrôlés, un suivi vétérinaire régulier et un environnement sain peuvent réduire les risques.</p>
+                    <p>🔹 Colibacillose – Infection bactérienne causée par la bactérie Escherichia coli. Elle touche principalement les volailles et les porcs, provoquant des symptômes tels que des troubles digestifs, des diarrhées, et des problèmes respiratoires. Elle se développe souvent dans des conditions de surpopulation et de mauvaise gestion de l'hygiène. Des antibiotiques appropriés et une bonne hygiène sont essentiels pour limiter les risques.</p>
+                    <p>🔹 Mycoplasmose aviaire – Infection bactérienne qui touche principalement les poules, provoquant des problèmes respiratoires, une baisse de la production d'œufs et une pneumonie chronique. Elle est souvent exacerbée par un environnement humide et mal ventilé. Des traitements antibiotiques spécifiques et des mesures de prévention sont nécessaires pour contrôler la maladie.</p>
+                    <p>🔹 Salmonellose – Infection bactérienne causée par la bactérie Salmonella, qui peut toucher les volailles, porcs et autres animaux d’élevage. Les symptômes incluent des diarrhées, des vomissements et une détérioration rapide de l’état général. Elle peut également être transmise aux humains via la consommation de viande infectée. Une gestion sanitaire stricte, l'isolement des animaux malades et une bonne hygiène sont cruciales pour éviter sa propagation.</p>
+                   <p>Ne reste pas impuissant face aux pertes et aux infections !</p> 
+                    <img src="poules.jpg" alt=""> <img src="site.jpg" alt="">
+                    <p>Je te montre des ASTUCES TRÈS EFFICACES pour protéger ton élevage et assurer ta rentabilité. 🚀✅
+                        💬 Envoie-moi directement un message pour découvrir ces solutions et sauver ton élevage ! 📩</p>👉 
+                    <p>📱 Numéros : Moov 0199648190 | MTN 0154161300</p>
+                    <p>📧 Email : dandjekpoabel03@gmail.com</p>
+                    <p>#SantéAnimale #StopAuxMaladies #ÉlevageRéussi #ProtectionDuBétail #BoostTonÉlevage</p>
+                    </p>
+            </div>
+
+            <!-- Ajoutez plus de publications ici -->
+            <!-- <div class="publication"> ... </div> -->
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 SECS DDK ELEVAGE. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Fonction pour afficher ou masquer les détails des formations
+        function toggleFormationDetails(formationId) {
+            var details = document.getElementById(formationId);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
+

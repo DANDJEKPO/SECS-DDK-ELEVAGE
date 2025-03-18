@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECS DDK ELEVAGE - Abel DANDJEKPO</title>
+    <style>
+        /* Réinitialiser les marges et les paddings par défaut */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style du corps du site */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* En-tête */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Style des liens de navigation */
+        header nav ul {
+            list-style-type: none;
+            margin-top: 10px;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section principale */
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1em;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Pied de page */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        main {
+            padding-bottom: 50px;  /* Ajout d'espace pour que le footer ne cache pas le contenu */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header nav ul {
+                text-align: center;
+            }
+
+            header nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenue sur SECS DDK ELEVAGE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil">
+            <h2>Accueil</h2>
+            <p>Découvrez nos services d'élevage et de formation pour tous ceux qui souhaitent se lancer dans l’élevage.</p>
+            <img src="images/480544878_122095319798805451_4398516654898913029_n.jpg" alt="Oeufs de poules">
+        </section>
+
+        <section id="services">
+            <h2>Nos Services</h2>
+            <p>Nous proposons des formations en ligne et en présentiel, des conseils en élevage et des ventes d’animaux.</p>
+            <img src="images/480462593_122095320158805451_1958883957087591551_n.jpg" alt="Poules pondeuses">
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <p>📞 Téléphone : 0199648190</p>
+            <p>📧 Email : dandjekpoabel03@gmail.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SECS DDK ELEVAGE - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
