@@ -177,7 +177,9 @@
         }
 
     </style>
+    
 </head>
+<script src="js/script.js"></script>
 <body>
 
     <!-- En-tête avec logo et navigation -->
@@ -364,39 +366,51 @@
         </section>
 
         <!-- Section des publications quotidiennes -->
-        <section id="publications">
-            <h2>Publications du jour</h2>
-
-            <!-- Publication de la journée -->
-            <div class="publication">
-                <h3>Publication du 17 mars 2025</h3>
-                <p>Bienvenue dans cette nouvelle journée! Aujourd'hui, nous allons aborder les meilleurs conseils pour réussir votre élevage de lapins... 
-                    <h3>📢 ÉLEVEUR, NE LAISSE PLUS LES MALADIES RUINER TON TRAVAIL ! 🐓🐖🐇💊🔥</h3>
-                    <P>Les maladies bactériennes et virales découragent trop d’éleveurs de lapins, porcs, poulets de chair et pondeuses ! </P>
-                    <p> Voici les principales maladies qui frappent les élevages :</p>
-                    <p>🔹 Peste porcine africaine (PPA) – Virus hautement contagieux pour les porcs, provoquant une mort rapide des animaux infectés. Elle se manifeste par une forte fièvre, des hémorragies internes et une détérioration rapide de la santé. Il n'existe pas de traitement ou de vaccin efficace contre cette maladie, ce qui la rend très difficile à contrôler.</p>
-                    <p>🔹 Maladie de Newcastle – Virus qui affecte les volailles, principalement les poules. Elle se caractérise par des symptômes respiratoires, des troubles nerveux et une diarrhée. La mortalité peut atteindre 100 % si la maladie n’est pas maîtrisée rapidement. La prévention passe par la vaccination et une bonne gestion sanitaire.</p>
-                    <p>🔹 Influenza aviaire (grippe aviaire) – Virus hautement contagieux affectant les poules et autres volailles. Elle peut entraîner des symptômes respiratoires graves et affecter la production d'œufs. Elle peut se propager rapidement dans un élevage et provoquer des pertes économiques considérables. La vaccination et des mesures de bio-sécurité strictes sont essentielles pour la prévenir.</p>
-                    <p>🔹 Coccidiose – Infection parasitaire causée par des coccidies, qui affecte les lapins et poules. Les symptômes incluent de la diarrhée, des pertes de poids et une déshydratation sévère. C'est une maladie fréquente dans les environnements de forte densité d'animaux. Un traitement précoce avec des antibiotiques spécifiques et la gestion de l'hygiène sont cruciaux pour éviter sa propagation.</p>
-                    <p>🔹 Tuberculose porcine – Maladie bactérienne chronique qui affecte principalement les porcs. Elle se manifeste par des pertes de poids, de la fièvre, et des problèmes respiratoires. Bien qu’elle soit plus fréquente dans les élevages non contrôlés, un suivi vétérinaire régulier et un environnement sain peuvent réduire les risques.</p>
-                    <p>🔹 Colibacillose – Infection bactérienne causée par la bactérie Escherichia coli. Elle touche principalement les volailles et les porcs, provoquant des symptômes tels que des troubles digestifs, des diarrhées, et des problèmes respiratoires. Elle se développe souvent dans des conditions de surpopulation et de mauvaise gestion de l'hygiène. Des antibiotiques appropriés et une bonne hygiène sont essentiels pour limiter les risques.</p>
-                    <p>🔹 Mycoplasmose aviaire – Infection bactérienne qui touche principalement les poules, provoquant des problèmes respiratoires, une baisse de la production d'œufs et une pneumonie chronique. Elle est souvent exacerbée par un environnement humide et mal ventilé. Des traitements antibiotiques spécifiques et des mesures de prévention sont nécessaires pour contrôler la maladie.</p>
-                    <p>🔹 Salmonellose – Infection bactérienne causée par la bactérie Salmonella, qui peut toucher les volailles, porcs et autres animaux d’élevage. Les symptômes incluent des diarrhées, des vomissements et une détérioration rapide de l’état général. Elle peut également être transmise aux humains via la consommation de viande infectée. Une gestion sanitaire stricte, l'isolement des animaux malades et une bonne hygiène sont cruciales pour éviter sa propagation.</p>
-                   <p>Ne reste pas impuissant face aux pertes et aux infections !</p> 
-                    <img src="poules.jpg" alt=""> <img src="site.jpg" alt="">
-                    <p>Je te montre des ASTUCES TRÈS EFFICACES pour protéger ton élevage et assurer ta rentabilité. 🚀✅
-                        💬 Envoie-moi directement un message pour découvrir ces solutions et sauver ton élevage ! 📩</p>👉 
-                    <p>📱 Numéros : Moov 0199648190 | MTN 0154161300</p>
-                    <p>📧 Email : dandjekpoabel03@gmail.com</p>
-                    <p>#SantéAnimale #StopAuxMaladies #ÉlevageRéussi #ProtectionDuBétail #BoostTonÉlevage</p>
-                    Méthodes pédagogiques :
-
-</p>
-            </div>
-
-            <!-- Ajoutez plus de publications ici -->
-            <!-- <div class="publication"> ... </div> -->
+        <section id="publication">
+            <h2>Publications</h2>
+            <p>Découvrez nos dernières publications et articles sur l'élevage et l'agriculture.</p>
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" onclick="toggleContent('pub1')">Article 1: Introduction à quelques maladies animales</a>
+                    <div id="pub1" class="publication-content" style="display: none;">
+                        
+                            <h3>📢 ÉLEVEUR, NE LAISSE PLUS LES MALADIES RUINER TON TRAVAIL ! 🐓🐖🐇💊🔥</h3>
+                            <P>Les maladies bactériennes et virales découragent trop d’éleveurs de lapins, porcs, poulets de chair et pondeuses ! </P>
+                            <p> Voici les principales maladies qui frappent les élevages :</p>
+                            <p>🔹 Peste porcine africaine (PPA) – Virus hautement contagieux pour les porcs, provoquant une mort rapide des animaux infectés. Elle se manifeste par une forte fièvre, des hémorragies internes et une détérioration rapide de la santé. Il n'existe pas de traitement ou de vaccin efficace contre cette maladie, ce qui la rend très difficile à contrôler.</p>
+                            <p>🔹 Maladie de Newcastle – Virus qui affecte les volailles, principalement les poules. Elle se caractérise par des symptômes respiratoires, des troubles nerveux et une diarrhée. La mortalité peut atteindre 100 % si la maladie n’est pas maîtrisée rapidement. La prévention passe par la vaccination et une bonne gestion sanitaire.</p>
+                            <p>🔹 Influenza aviaire (grippe aviaire) – Virus hautement contagieux affectant les poules et autres volailles. Elle peut entraîner des symptômes respiratoires graves et affecter la production d'œufs. Elle peut se propager rapidement dans un élevage et provoquer des pertes économiques considérables. La vaccination et des mesures de bio-sécurité strictes sont essentielles pour la prévenir.</p>
+                            <p>🔹 Coccidiose – Infection parasitaire causée par des coccidies, qui affecte les lapins et poules. Les symptômes incluent de la diarrhée, des pertes de poids et une déshydratation sévère. C'est une maladie fréquente dans les environnements de forte densité d'animaux. Un traitement précoce avec des antibiotiques spécifiques et la gestion de l'hygiène sont cruciaux pour éviter sa propagation.</p>
+                            <p>🔹 Tuberculose porcine – Maladie bactérienne chronique qui affecte principalement les porcs. Elle se manifeste par des pertes de poids, de la fièvre, et des problèmes respiratoires. Bien qu’elle soit plus fréquente dans les élevages non contrôlés, un suivi vétérinaire régulier et un environnement sain peuvent réduire les risques.</p>
+                            <p>🔹 Colibacillose – Infection bactérienne causée par la bactérie Escherichia coli. Elle touche principalement les volailles et les porcs, provoquant des symptômes tels que des troubles digestifs, des diarrhées, et des problèmes respiratoires. Elle se développe souvent dans des conditions de surpopulation et de mauvaise gestion de l'hygiène. Des antibiotiques appropriés et une bonne hygiène sont essentiels pour limiter les risques.</p>
+                            <p>🔹 Mycoplasmose aviaire – Infection bactérienne qui touche principalement les poules, provoquant des problèmes respiratoires, une baisse de la production d'œufs et une pneumonie chronique. Elle est souvent exacerbée par un environnement humide et mal ventilé. Des traitements antibiotiques spécifiques et des mesures de prévention sont nécessaires pour contrôler la maladie.</p>
+                            <p>🔹 Salmonellose – Infection bactérienne causée par la bactérie Salmonella, qui peut toucher les volailles, porcs et autres animaux d’élevage. Les symptômes incluent des diarrhées, des vomissements et une détérioration rapide de l’état général. Elle peut également être transmise aux humains via la consommation de viande infectée. Une gestion sanitaire stricte, l'isolement des animaux malades et une bonne hygiène sont cruciales pour éviter sa propagation.</p>
+                           <p>Ne reste pas impuissant face aux pertes et aux infections !</p> 
+                            <img src="poules.jpg" alt=""> <img src="site.jpg" alt="">
+                            <p>Je te montre des ASTUCES TRÈS EFFICACES pour protéger ton élevage et assurer ta rentabilité. 🚀✅
+                                💬 Envoie-moi directement un message pour découvrir ces solutions et sauver ton élevage ! 📩</p>👉 
+                            <p>📱 Numéros : Moov 0199648190 | MTN 0154161300</p>
+                            <p>📧 Email : dandjekpoabel03@gmail.com</p>
+                            <p>#SantéAnimale #StopAuxMaladies #ÉlevageRéussi #ProtectionDuBétail #BoostTonÉlevage</p></p>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" onclick="toggleContent('pub2')">Article 2: Les meilleures pratiques pour l'élevage de lapins</a>
+                    <div id="pub2" class="publication-content" style="display: none;">
+                        <p>Voici le contenu détaillé de l'article sur l'élevage de lapins. Vous pouvez ajouter tout le texte ici...</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" onclick="toggleContent('pub3')">Article 3: Comment démarrer une ferme d'élevage rentable</a>
+                    <div id="pub3" class="publication-content" style="display: none;">
+                        <p>Voici le contenu détaillé de l'article sur la création d'une ferme d'élevage. Vous pouvez ajouter tout le texte ici...</p>
+                    </div>
+                </li>
+            </ul>
         </section>
+        
+                
+
     </main>
 
     <!-- Pied de page -->
@@ -415,7 +429,16 @@
             }
         }
     </script>
-
+<script>
+    // Fonction pour afficher ou masquer le contenu des publications
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
+    }
+</script>
 </body>
 </html>
-
